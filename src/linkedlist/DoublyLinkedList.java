@@ -1,3 +1,5 @@
+package linkedlist;
+
 public class DoublyLinkedList <T>  {
     private int size = 0;
     private Node<T> head = null;

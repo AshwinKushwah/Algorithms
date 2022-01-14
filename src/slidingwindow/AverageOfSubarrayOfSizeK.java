@@ -1,7 +1,7 @@
 package slidingwindow;
 
 public class AverageOfSubarrayOfSizeK {
-    public static void double[] findAverages(int K, int[] arr){
+    public static double[] findAverages(int K, int[] arr){
         double[] result = new double[arr.length - K + 1];
         double windowSum = 0;
         int windowStart = 0;
@@ -16,12 +16,16 @@ public class AverageOfSubarrayOfSizeK {
                 windowStart++;
             }
         }
-
+        return result;
     }
 
 
     public static void main(String[] args){
-        
+        double result [] = findAverages(5, new int[]{1,4,6,7,8,9,3,5,11});
+        System.out.println("The result is--");
+        for(int i=0; i<result.length; i++){
+            System.out.println(result[i]);
+        }
     }
 
 
