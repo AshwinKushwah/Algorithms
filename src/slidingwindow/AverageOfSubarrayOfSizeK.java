@@ -1,3 +1,10 @@
+/** Problem Statement */
+
+/**Given an array, find the average of all contiguous subarrays of size ‘K’ in it */
+
+//Complexity - Time O(N) 
+
+
 package slidingwindow;
 
 public class AverageOfSubarrayOfSizeK {
