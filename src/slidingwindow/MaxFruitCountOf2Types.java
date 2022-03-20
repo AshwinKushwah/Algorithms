@@ -9,6 +9,10 @@
  * 
  */
 
+ // Time Complexity - O(N+N) = O(N)
+ // Space Complexity - O(1) = There can be maximum of three type of fruits stored in charFrequencyMap
+ 
+
 
 package slidingwindow;
 
@@ -16,6 +20,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class MaxFruitCountOf2Types {
+
     public static int findMaxFruitSubArrayLength(char [] fruits){
         int windowStart = 0, maxLength = 0;
         Map<Character, Integer> charFrequencyMap = new HashMap<>();
