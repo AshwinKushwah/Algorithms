@@ -23,9 +23,9 @@ public class LongestSubstringKDistinct {
         
         for(int windowEnd=0; windowEnd<str.length(); windowEnd++){
             char rightChar = str.charAt(windowEnd);
-            charFrequencyMap.put(rightChar, charFrequencyMap.getOrDefault(rightChar, 1)+1);
+            charFrequencyMap.put(rightChar, charFrequencyMap.getOrDefault(rightChar, 0)+1);
 
-            if(charFrequencyMap.size()>k){
+            while(charFrequencyMap.size()>k){
                 
                 char leftChar = str.charAt(windowStart);
                 charFrequencyMap.put(leftChar, charFrequencyMap.get(leftChar)-1);
