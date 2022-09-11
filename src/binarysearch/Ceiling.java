@@ -21,6 +21,12 @@ public class Ceiling {
     public static int findCeiling(int [] ele, int target){
         int start = 0, end = ele.length - 1;
 
+        //if the target element is the greater than the Largest element of array
+        //then no ceiling exist, return -1
+        if(target > ele[ele.length-1]){
+            return -1;
+        }
+
         while(start <= end){
             int mid = start + (end - start)/2;
 
