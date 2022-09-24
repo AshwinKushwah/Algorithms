@@ -19,7 +19,7 @@ public class PeakInMountainArray {
 
    }
    
-   public static int findPeakApproachOne(int arr[]){
+   public static int findPeakInMountain(int arr[]){
     int start = 0, end = arr.length-1;
 
     while(start < end){
